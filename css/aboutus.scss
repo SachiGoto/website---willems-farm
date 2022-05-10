@@ -1,0 +1,157 @@
+$red:#8E4346;
+$blueberryBlue:#32588F;
+$background: #FDFCF5;
+$frame: 8px solid #E4DADA;
+
+@mixin backgroundImage($background-size, $image, $maxwidth){
+    background-size:$background-size;
+    background-position:center;
+    background-image:$image;
+    opacity:85%;
+   max-width:$maxwidth;
+};
+    
+
+@mixin center-row{
+  justify-content:center;
+  display:flex;
+  align-items:center;}
+
+@mixin center-column{
+  justify-content:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;}
+
+
+
+
+
+.heroImage{
+    // background-image:url("../img/strawberrypicking.jpeg");
+    width:100vw;
+    height:clamp(300px, 45vw, 500px);
+    @include center-row();
+    @include backgroundImage(cover, url("../img/strawberrypicking.jpeg"), 100vw);
+}
+
+.heroImage-text{
+    text-align:center;
+    // color:$background;
+    color:white;
+    width:60vw;
+    font-size:clamp(20px, 5vw, 30px);
+}
+
+
+main{
+    max-width:80vw;
+    min-width:300px;
+   
+    margin:2rem auto 4rem;
+   
+}
+
+.ourStory-title, .ourValue-title{
+    @include center-row();
+    margin:5rem 0 2rem 0;
+}
+
+.line{
+    background-color:$red;
+    height:3px;
+    width:10vw;
+    margin:0 1rem;
+}
+
+.ourStory-part1-image{
+    @include backgroundImage(cover, url("../img/aboutus-owners.jpeg"), 500px);
+    border:$frame;
+    height:clamp(300px,30vh,500px);
+
+}
+
+.ourStory-part1-text, .ourStory-part2-text, .ourValues-part1-text, .ourValues-part2-text{
+    max-width:500px;
+    @include center-row();
+}
+
+.ourStory-part2, .ourValues-part2{
+    margin-top:5rem;
+}
+
+.ourStory-part2-image{
+    @include backgroundImage(cover, url("../img/aboutUs-farming.jpeg"),500px);
+    border:$frame;
+    height:clamp(300px,30vh,500px);
+   
+}
+
+.ourValues-part1-image{
+    @include backgroundImage(cover, url("../img/aboutus-blueberries.jpg"),500px);
+    border:$frame;
+    height:clamp(300px,30vh,500px);
+}
+
+.ourValues-part2-image{
+    @include backgroundImage(cover, url("../img/strawberrypatch.jpeg"),500px);
+    border:$frame;
+    height:clamp(300px,30vh,500px);
+}
+
+
+
+.subheading{
+    text-align:center;
+}
+
+
+.directionContainer{
+    margin:10% auto;
+    @include center-row();
+    max-width:70vw;
+  
+  }
+  
+  
+  .icon{
+    display:flex;
+    align-items:center;
+    // width:30%;
+  
+  }
+  
+  .icon p{
+    margin:0 !important;
+  }
+  
+  
+  
+  .directionmapContainer{
+    margin:10% 3%;
+  }
+  
+  .map{
+    width:100%;
+    height:200px;
+    background-color:blue;
+  }
+  
+  .directionIcon{
+    display:flex;
+  }
+  
+  .fa-map-location-dot{
+    font-size:35px;
+    margin-left:10px;
+  }
+  
+  
+
+
+
+@media(min-width:1200px){
+    main{
+        max-width:960px;
+    }
+}

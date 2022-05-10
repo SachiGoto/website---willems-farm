@@ -1,0 +1,107 @@
+*{
+    box-sizing:border-box;
+  }
+
+  @font-face {
+    font-family: futura-bold ;
+    src: url(../futura/Futura\ Bold\ font.ttf);
+
+  }
+
+  @font-face {
+    font-family: futura ;
+    src: url(../futura/futura\ medium\ bt.ttf);
+    
+  }
+  
+  
+  $red:#8E4346;
+  $blueberryBlue:#32588F;
+  $background: #FDFCF5;
+  $frame: 8px solid #E4DADA;
+  
+  @mixin backgroundImage($background-size, $image, $maxwidth){
+      background-size:$background-size;
+      background-position:center;
+      background-image:$image;
+      opacity:85%;
+     max-width:$maxwidth;
+  };
+      
+  
+  @mixin center-row{
+    justify-content:center;
+    display:flex;
+    align-items:center;}
+  
+  @mixin center-column{
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;}
+  
+  
+    .heroImage{
+        // background-image:url("../img/strawberrypicking.jpeg");
+        width:100vw;
+        height:clamp(300px, 45vw, 500px);
+        @include center-row();
+        @include backgroundImage(cover, url("../img/visit-us-image.jpeg"), 100vw);
+    }
+    
+    .heroImage-text{
+        text-align:center;
+        // color:$background;
+        color:white;
+        width:60vw;
+        font-size:clamp(20px, 5vw, 30px);
+    }
+
+    .visit-title{
+        @include center-row();
+        margin:5rem 0;
+    }
+    
+    .line{
+        background-color:$red;
+        height:3px;
+        width:10vw;
+        margin:0 1rem;
+    }
+
+    main{
+        max-width:80vw;
+        min-width:300px;
+       
+        margin:2rem auto 4rem;
+       
+      }
+
+
+
+  .subheading{
+    text-align:center;
+    margin:5rem 0 2rem 0;
+  }
+
+
+  .FAQContainer, .AboutU-pickContainer, .etiquetteContainer, .covid-19-uPick-Container, .covid-19-employee-Container{
+     border:3px solid $red;
+     border-radius:3%;
+     padding:5%;
+     box-shadow: 3px 3px 5px #d9c6c6;
+    // filter: drop-shadow(4px 4px 6px rgba(21, 19, 19, 0.57));
+  }
+
+
+  .question{
+      font-family:futura-bold;
+      font-size:20px;
+      margin:1.5rem 0 1rem 0;
+  }
+
+  .answer{
+    //   text-align:center;
+  }
+      
+    

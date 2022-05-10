@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: futura-bold;
+  src: url(../futura/Futura\ Bold\ font.ttf);
+}
+@font-face {
+  font-family: futura;
+  src: url(../futura/futura\ medium\ bt.ttf);
+}
+* {
+  font-family: futura;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #FDFCF5;
+}
+
+.navbar {
+  background-color: #FDFCF5 !important;
+}
+
+.CTA {
+  background-color: #32588F;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  min-width: 150px;
+  padding: 1em clamp(10px, 2em, 50px);
+  display: block;
+  font-size: clamp(16px, 1.5vw, 30px);
+  margin: 3%;
+}
+
+.CTA2 {
+  background-color: white;
+  color: #32588F;
+  border-radius: 7px;
+  border: 1px solid #32588F;
+  min-width: 150px;
+  padding: 1em clamp(10px, 2em, 50px);
+  display: block;
+  font-size: clamp(16px, 1.5vw, 30px);
+  margin: 3%;
+}
+
+.wave {
+  background-image: url("../img/wave.svg");
+  width: 100vw;
+  height: 10vh;
+  margin-bottom: -1px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: #274568;
+  width: 100vw;
+  padding: 5% 0 10% 0;
+}
+
+.fa-facebook {
+  color: white;
+  font-size: 30px;
+}
+
+.fa-instagram {
+  color: #274568;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.insta {
+  background-color: white;
+  height: 30px;
+  width: 30px !important;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+
+.quickLinks-title {
+  color: #FDFCF5;
+}
+
+.quickLinks-ul {
+  text-decoration: none;
+  list-style-type: none;
+  color: #FDFCF5;
+  padding-left: 0;
+  min-width: 140px;
+}
+
+.footer-logo {
+  border-radius: 30%;
+  background-image: url("../img/Willems-Logo-thumbnail2019.jpg");
+  width: 200px !important;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer-part1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-part2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-text {
+  color: #FDFCF5;
+  margin: 10px 0;
+}
+
+.footer-iconContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */

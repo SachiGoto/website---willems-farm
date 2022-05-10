@@ -1,0 +1,211 @@
+$red:#8E4346;
+$blueberryBlue:#32588F;
+$background: #FDFCF5;
+
+
+ $frame: 8px solid #E4DADA;
+
+
+
+@mixin center-row{
+  justify-content:center;
+  display:flex;
+  align-items:center;
+}
+
+@mixin center-column{
+  justify-content:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+@font-face {
+    font-family: futura-bold ;
+    src: url(../futura/Futura\ Bold\ font.ttf);
+
+  }
+
+  @font-face {
+    font-family: futura ;
+    src: url(../futura/futura\ medium\ bt.ttf);
+    
+  }
+
+
+
+.heroImage{
+    background-image:url("../img/2020\ Willems\ Berry\ Farm_42.JPG");
+    width:100vw;
+    // min-height:300px;
+    background-size:cover;
+    opacity:85%;
+    background-position:center;
+    height:clamp(300px, 45vw, 500px);
+
+}
+
+.updateContainer{
+  border:2px $red solid;
+  border-radius:10px;
+  text-align:center;
+  max-width:80vw;
+  margin: 5% auto;
+  padding:3% 10%;
+
+  @include center-column();
+}
+
+.update{
+    color:$red;
+    
+  
+}
+
+.subheading{
+  text-align:center;
+}
+
+.aboutUs{
+     @include center-column();
+     margin: 10% 3%;
+}
+
+.aboutUs-text{
+  text-align:center;
+  width:70vw;
+  // margin: 0 auto;
+  
+}
+
+.aboutUsImage{
+  background-image:url("../img/farmimage1.jpg");
+  width:100vw;
+  height:clamp(300px, 45vw, 500px);
+  background-position:center;
+  background-size:cover;
+}
+
+.productContainer{
+  @include center-column();
+  margin-bottom:5vw;
+
+ 
+  // margin:10% 15%;
+}
+.imageIconContainer{
+    @include center-row();
+    margin-bottom:5vw;
+   
+}
+
+
+.imageIcon{
+  min-width:100px;
+  // margin:0 5%;
+  @include center-column();
+
+  img{
+    width:100px;
+    
+  }
+  p{
+    max-width:200px;
+  }
+}
+ 
+
+
+
+.icon-title{
+  text-align:center;
+  font-size:15px;
+}
+
+.icon-text{
+  text-align:center;
+  font-size:12px;
+}
+
+// .helloBtn{
+//   width:200px;
+//   margin:0 auto;
+//   display:block;
+// }
+
+.visit-content-box{
+  @include center-row();
+  margin:10% 3%;
+}
+
+.visit-image{
+  background-image:url("../img/visiting-farm.jpg");
+  background-size:cover;
+  background-position:center;
+  // height:300px;
+  border: $frame;
+  // max-height:500px;
+  width:clamp(300px,40vw , 650px);
+  // width:40vw;
+  height:30vw;
+  min-height:250px;
+  margin-bottom:1em;
+
+}
+
+.visit-content{
+  text-align:center;
+  max-width:500px;
+}
+
+.visit-bottons{
+   @include center-row();
+   margin:10% auto;
+   max-width:65vw;
+
+   p{
+     margin-bottom:0;
+     text-align:center;
+   }
+}
+
+.directionContainer{
+  margin:10% auto;
+  @include center-row();
+  max-width:70vw;
+
+}
+
+
+.icon{
+  display:flex;
+  align-items:center;
+  // width:30%;
+
+}
+
+.icon p{
+  margin:0 !important;
+}
+
+
+
+.directionmapContainer{
+  margin:10% 3%;
+}
+
+.map{
+  width:100%;
+  height:200px;
+  background-color:blue;
+}
+
+.directionIcon{
+  display:flex;
+}
+
+.fa-map-location-dot{
+  font-size:35px;
+  margin-left:10px;
+}
+

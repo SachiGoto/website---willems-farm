@@ -1,0 +1,229 @@
+*{
+  box-sizing:border-box;
+}
+
+
+$red:#8E4346;
+$blueberryBlue:#32588F;
+$background: #FDFCF5;
+$frame: 8px solid #E4DADA;
+
+@mixin backgroundImage($background-size, $image, $maxwidth){
+    background-size:$background-size;
+    background-position:center;
+    background-image:$image;
+    opacity:85%;
+   max-width:$maxwidth;
+};
+    
+
+@mixin center-row{
+  justify-content:center;
+  display:flex;
+  align-items:center;}
+
+@mixin center-column{
+  justify-content:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;}
+
+
+
+
+
+
+  .heroImage{
+    // background-image:url("../img/strawberrypicking.jpeg");
+    width:100vw;
+    height:clamp(300px, 45vw, 500px);
+    @include center-row();
+    @include backgroundImage(cover, url("../img/products-heroImage.JPG"), 100vw);
+}
+
+
+.heroImage-text{
+    text-align:center;
+    // color:$background;
+    color:white;
+    width:60vw;
+    font-size:clamp(20px, 5vw, 30px);
+}
+
+
+.subheading{
+  text-align:center;
+  margin-bottom:2rem;
+}
+.ourProducts-title{
+    @include center-row();
+    margin:5rem 0 2rem 0;
+}
+
+.line{
+    background-color:$red;
+    height:3px;
+    width:10vw;
+    margin:0 1rem;
+}
+
+main{
+  max-width:90vw;
+  min-width:300px;
+ 
+  margin:2rem auto 4rem;
+ 
+}
+
+.ourProducts-discription{
+    text-align:center;
+    margin:0 auto 3rem auto;
+    width:70vw;
+
+}
+
+.imageIconContainer{
+    @include center-row();
+    margin-bottom:5vw;
+   
+}
+
+
+.imageIcon{
+  min-width:100px;
+  // margin:0 5%;
+  @include center-column();
+
+  img{
+    width:100px;
+    
+  }
+  p{
+    max-width:200px;
+  }
+}
+ 
+
+
+
+.icon-title{
+  text-align:center;
+  font-size:15px;
+}
+
+.icon-text{
+  text-align:center;
+  font-size:12px;
+}
+
+
+
+
+
+
+.u-pick-text, .freshBerries-text, .frozenBerries-text{
+  // width:clamp(100px,40vw,500px);
+    @include center-row();
+   
+   
+}
+
+.u-pick, .freshBerries, .frozenBerries{   
+    margin: 0 0 2rem 0;
+    justify-content:center;
+    
+}
+
+
+.u-pick-image, .freshBerries-image, .frozenBerries-image{
+  border:$frame;
+  height:clamp(100px,40vw,300px);
+  width:clamp(100px,40vw,300px);
+  
+  
+  margin-bottom:1rem;
+
+}
+
+.u-pick-image{
+  @include backgroundImage(cover, url("../img/products-u-pick.jpg"), 500px);
+}
+
+.freshBerries-image{
+    @include backgroundImage(cover, url("../img/products-freshBerries.jpg"),500px);
+}
+
+.frozenBerries-image{
+    @include backgroundImage(cover, url("../img/products-frozenBerries.jpeg"),500px); 
+}
+
+// -------- flower----------
+
+.flowers{
+  @include center-column();
+  
+}
+
+.flower-description{
+      width:70vw;
+      // margin:0 auto 2rem;
+      text-align:center;
+
+}
+
+.flowers-imageContainer{
+  @include center-row();
+  padding:0;
+}
+
+.flowerImage1{
+  
+  @include backgroundImage(cover, url("../img/products-flower1.jpg") , 500px );
+  // height:clamp(200px,30vh,400px);
+  height:clamp(100px,40vw,300px);
+  border:5px solid $background;
+  padding:0;
+}
+
+.flowerImage2{
+  
+  @include backgroundImage(cover, url("../img/products-flower2.jpeg") , 500px );
+  height:clamp(100px,40vw,300px);
+  border:5px solid $background;
+  padding:0;
+}
+
+.flowerImage3{
+  
+  @include backgroundImage(cover, url("../img/products-flower3.jpeg") , 500px );
+  height:clamp(100px,40vw,300px);
+  border:5px solid $background;
+  padding:0;
+}
+
+.flowerImage4{
+  
+  @include backgroundImage(cover, url("../img/products-flower4.jpeg") , 500px );
+  height:clamp(100px,40vw,300px);
+  border:5px solid $background;
+  padding:0;
+}
+
+.CTA{
+  margin: 2rem auto;
+}
+
+.comeDownToTheFarm{
+  margin-top:3rem;
+  text-align: center;
+}
+
+
+@media(min-width:768px){
+  .u-pick-image, .frozenBerries-image, .freshBerries-image{
+    margin-bottom:0;
+    margin-right:1rem;
+  }
+}
+
+
