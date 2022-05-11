@@ -1,0 +1,97 @@
+*{
+    box-sizing:border-box;
+  }
+
+  @font-face {
+    font-family: futura-bold ;
+    src: url(../futura/Futura\ Bold\ font.ttf);
+
+  }
+
+  @font-face {
+    font-family: futura ;
+    src: url(../futura/futura\ medium\ bt.ttf);
+    
+  }
+  
+  
+  $red:#8E4346;
+  $blueberryBlue:#32588F;
+  $background: #FDFCF5;
+  $frame: 8px solid #E4DADA;
+  
+  @mixin backgroundImage($background-size, $image, $maxwidth){
+      background-size:$background-size;
+      background-position:center;
+      background-image:$image;
+      opacity:85%;
+     max-width:$maxwidth;
+  };
+      
+  
+  @mixin center-row{
+    justify-content:center;
+    display:flex;
+    align-items:center;}
+  
+  @mixin center-column{
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;}
+  
+  
+    .heroImage{
+        // background-image:url("../img/strawberrypicking.jpeg");
+        width:100vw;
+        height:clamp(300px, 45vw, 500px);
+        @include center-row();
+        @include backgroundImage(cover, url("../img/farm-house.JPG"), 100vw);
+    }
+
+    .required:after{
+        content:" *";
+        color: red;
+      }
+      /* .message{ */
+      .message{
+          font-size: 14px;
+          margin:4px 0px;
+          color:rgb(68, 66, 66);
+          display:none;
+          font-weight:bold;
+      }
+
+
+      
+      .error{
+          color:red;
+          
+      }
+
+      .success{
+          color:green;
+      }
+
+
+
+
+   
+
+
+
+      .imageError{
+          width:25px;
+          height:20px;
+          display:none;
+      }
+
+      .imgSuccess{
+          width:20px;
+          height:20px;
+          display:none;
+      }
+
+    //   .{
+    //     display:none;
+    //   }

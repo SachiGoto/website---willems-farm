@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: futura-bold;
+  src: url(../futura/Futura\ Bold\ font.ttf);
+}
+@font-face {
+  font-family: futura;
+  src: url(../futura/futura\ medium\ bt.ttf);
+}
+.heroImage {
+  width: 100vw;
+  height: clamp(300px, 45vw, 500px);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/farm-house.JPG");
+  opacity: 85%;
+  max-width: 100vw;
+}
+
+.required:after {
+  content: " *";
+  color: red;
+}
+
+/* .message{ */
+.message {
+  font-size: 14px;
+  margin: 4px 0px;
+  color: #444242;
+  display: none;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.imageError {
+  width: 25px;
+  height: 20px;
+  display: none;
+}
+
+.imgSuccess {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+/*# sourceMappingURL=contactUs.css.map */

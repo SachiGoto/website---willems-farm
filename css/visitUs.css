@@ -34,7 +34,7 @@
   justify-content: center;
   display: flex;
   align-items: center;
-  margin: 5rem 0;
+  margin: 5rem 0 2rem 0;
 }
 
 .line {
@@ -55,11 +55,31 @@ main {
   margin: 5rem 0 2rem 0;
 }
 
+.u-pick-etiquette {
+  text-align: center;
+}
+
 .FAQContainer, .AboutU-pickContainer, .etiquetteContainer, .covid-19-uPick-Container, .covid-19-employee-Container {
   border: 3px solid #8E4346;
   border-radius: 3%;
   padding: 5%;
   box-shadow: 3px 3px 5px #d9c6c6;
+}
+
+.covid-19-employee-Container {
+  margin: 2rem 0;
+}
+
+.contactusContainer {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 5rem auto;
+  width: 70vw;
+}
+
+.CTA {
+  width: 40vw;
 }
 
 .question {

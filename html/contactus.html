@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us page</title>
+        <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/contactUs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+
+<body>
+<div class="heroImage"></div>
+
+
+
+<div class="container">
+    <form method="post">
+        <fieldset>
+        <legend>Contact Form</legend>
+
+       
+    <div class="form-group">
+        <label class="required" for="first_name">First Name:</label>
+        <p class="message" id="firstname-message">First name must be entered</p>
+        <div class="d-flex">
+        <input class="form-control" name="first_name" type = "text" id="first_name">
+   
+          <img src="../img/alerticon.png" class="imageError" id="firstname_error">
+          <img src="../img/tick.png" class="imgSuccess" id="firstname_success">
+        </div>          
+       
+   </div>
+
+    <div class="form-group">
+      <label class="required" for="last_name">Last Name:</label>
+      <p class="message" id="lastname-message">Last name must be entered</p>
+      <div class="d-flex">
+        <input class="form-control" name="last_name" type = "text" id="last_name">
+          <img src="../img/alerticon.png" class="imageError" id="lastname_error" >
+          <img src="../img/tick.png" class="imgSuccess" id="lastname_success">
+        </div>
+      
+  </div>
+
+    <div class="form-group">
+        <label for ="email">Email:</label>
+        <p class="message" id="email_message">The format expected is name@domain.com</p>
+        <div class="d-flex">
+        <input  class="form-control" name="email" type = "email" name = "email" id="email">
+        <img src="../img/alerticon.png" class="imageError" id="email_error">
+        <img src="../img/tick.png" class="imgSuccess" id="email_success">
+        </div>
+       
+    </div> 
+
+    <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <p class="message" id="phone_message">Not a valid phone number</p>
+        <div class="d-flex">
+          <input  class="form-control" name="phone" type = "text" name = "phone" id="phone_number">
+          <img src="../img/alerticon.png" class="imageError" id="phone_error">
+          <img src="../img/tick.png" class="imgSuccess" id="phone_success">
+          </div>
+          
+    </div>
+        
+    <div class="form-group mb-3">
+        <p>Prefered contact method</p>
+        <input type="checkbox" id="visEmail">
+        <label for="viaEmail">Email</label>
+    
+        <input type="checkbox" id="viaPhone">
+        <label for="viaPhone">Phone number</label>
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="subject">Subject</label>
+        <input  class="form-control" name="subject" type = "text"  id="subject">
+    </div>
+   
+    
+    <div class="form-group mt-3 mb-3">
+         <p>Message</p>
+         <textarea  class="form-control" id="textarea" name="message" placeholder="Write a message here!" maxlength="600"></textarea><br>
+    </div>
+
+
+    <!-- <button type="submit" value ="Submit" id="submit">Submit</button><br> -->
+    <button type="submit" class="btn btn-secondary btn-md mb-5">Submit</button>
+    </fieldset>
+   
+    </form>
+
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../js/validation.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfhDomu0iglfc6Eo9ixxnpdVjdUd5REBU&callback=initMap">
+</script>
+
+
+
+
+</body>
+</html>
